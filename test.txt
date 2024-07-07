@@ -1,0 +1,11 @@
+INPUT "Enter a number: "
+LABEL loop_start
+DUP
+PRINT
+PUSH 1
+SUB
+DUP
+JUMP_IF_NEGATIVE end
+JUMP loop_start
+LABEL end
+END
